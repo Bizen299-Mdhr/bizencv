@@ -30,7 +30,7 @@ export default function MainPage() {
   if (loading) return <LoadingScreen />
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white  ">
       <Navigation />
 
       {/* Progress bar */}

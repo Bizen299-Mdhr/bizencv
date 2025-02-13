@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Bizen Manandhar',
+  description: 'Bizen Manandhar is a software engineer and a product designer',
+  generator: 'Bizen Manandhar',
 }
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body >{children}</body>
     </html>
   )
 }
