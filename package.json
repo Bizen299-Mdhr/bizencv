@@ -1,7 +1,7 @@
 {
   "name": "my-v0-project",
   "version": "0.1.0",
-  "homepage": "https://github.com/Bizen299-Mdhr/bizencv",
+  "homepage": "https://bizen299-mdhr.github.io/bizencv",
   "private": true,
   "scripts": {
     "dev": "next dev",
