@@ -1,4 +1,6 @@
 let userConfig = undefined
+const isProd = process.env.NODE_ENV === 'production';
+
 try {
   userConfig = await import('./v0-user-next.config')
 } catch (e) {
