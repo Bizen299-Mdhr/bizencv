@@ -7,9 +7,13 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode:true,
   eslint: {
     ignoreDuringBuilds: true,
   },
+  assetPrefix: isProd ? '/bizencv/' : '',
+  basePath: isProd ? '/bizencv' : '',
+  output: 'export',
   typescript: {
     ignoreBuildErrors: true,
   },
