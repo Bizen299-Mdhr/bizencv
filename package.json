@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out",
+    "static": "next build && touch ./out/.nojekyll && echo 'www.bizendra.com.np' > ./out/CNAME"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
