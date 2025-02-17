@@ -12,8 +12,8 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  assetPrefix: isProd ? '/bizencv/' : '',
-  basePath: isProd ? '/bizencv' : '',
+  assetPrefix: isProd ? '/' : '',
+  basePath: isProd ? '/' : '',
   output: 'export',
   typescript: {
     ignoreBuildErrors: true,
