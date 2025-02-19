@@ -14,18 +14,25 @@ const rajdhani = Rajdhani({
 export const metadata: Metadata = {
   title: {
     default: 'Bizen MDHR',
-    template: '%s | Site Name', // For dynamic titles in child pages
+    template: '%s | Bizen MDHR', // For dynamic titles in child pages
+    absolute: 'Bizen MDHR'
   },
+
   description: 'Bizen MDHR is a software development company that provides custom software development services to businesses of all sizes.',
   keywords: ['cv','profile','custom software development', 'web development', 'mobile development', 'software development', 'software development company', 'software development services', 'software development company in nepal', 'software development company in kathmandu', 'software development company in biratnagar', 'software development company in birgunj', 'software development company in pokhara', 'software development company in nepal'],
+  authors: [{ name: 'Bizen Mdhr', url: 'https://bizendra.com.np' }],
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: 'Open Graph Title',
-    description: 'Open Graph Description',
+    title: 'Bizen Mdhr',
+    description: 'Bizen Mdhr is a software development company that provides custom software development services to businesses of all sizes.',
     url: 'https://bizendra.com.np',
     siteName: 'Bizen Mdhr',
     images: [
       {
-        url: '../public/og-image.png', // Path to your OG image
+        url: './favicon-32x32.png', // Path to your OG image
         width: 800,
         height: 600,
       },
@@ -33,11 +40,19 @@ export const metadata: Metadata = {
     locale: 'en-US',
     type: 'website',
   },
+  icons: {
+    icon: './favicon-32x32.png',
+    apple: './apple-touch-icon.png',
+    other: {
+      rel: 'icon',
+      url: './favicon.ico',
+    },
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Twitter Title',
     description: 'Twitter Description',
-    images: ['../public/og-image.png'], // Path to your Twitter image
+    images: ['./favicon-32x32.png'], // Path to your Twitter image
   },
 } 
 export default function RootLayout({
@@ -47,6 +62,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${orbitron.variable} ${rajdhani.variable}`}>
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
