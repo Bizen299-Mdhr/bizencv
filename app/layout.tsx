@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Open Graph Title',
     description: 'Open Graph Description',
-    url: 'bizendra.com.np',
+    url: 'https://bizendra.com.np',
     siteName: 'Bizen Mdhr',
     images: [
       {
-        url: '/og-image.jpg', // Path to your OG image
+        url: '../public/og-image.png', // Path to your OG image
         width: 800,
         height: 600,
       },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Twitter Title',
     description: 'Twitter Description',
-    images: ['/twitter-image.jpg'], // Path to your Twitter image
+    images: ['../public/og-image.png'], // Path to your Twitter image
   },
 } 
 export default function RootLayout({
