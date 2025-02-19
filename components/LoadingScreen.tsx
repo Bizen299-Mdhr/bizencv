@@ -19,7 +19,7 @@ const LoadingScreen = () => (
         times: [0, 0.2, 0.5, 0.8, 1],
         repeat: Number.POSITIVE_INFINITY,
       }}
-      className="w-12 h-12 border-2 border-red-600"
+      className="w-12 h-12 border-2 border-red-900"
     />
   </motion.div>
 )

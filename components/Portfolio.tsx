@@ -179,7 +179,7 @@ const Portfolio = () => {
             onClick={closePopup}
           >
             <motion.div
-              className="relative w-full max-w-4xl aspect-[4/3] rounded-lg overflow-hidden border-4 border-red-600/20"
+              className="relative w-full max-w-4xl aspect-[4/3] rounded-lg overflow-hidden border-4 border-red-900/20"
               initial={{ scale: 0.9, opacity: 0, rotate: -10 }}
               animate={{ scale: 1, opacity: 1, rotate: 0 }}
               exit={{ scale: 0.9, opacity: 0, rotate: 10 }}
@@ -191,7 +191,7 @@ const Portfolio = () => {
                   <motion.div
                     animate={{ rotate: 360, scale: [1, 1.2, 1] }}
                     transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-                    className="w-16 h-16 border-4 border-t-red-600 border-r-transparent border-b-red-600 border-l-transparent rounded-full"
+                    className="w-16 h-16 border-4 border-t-red-900 border-r-transparent border-b-red-900 border-l-transparent rounded-full"
                   />
                 </div>
               )}
@@ -215,7 +215,7 @@ const Portfolio = () => {
                 className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4 flex items-center"
               >
                 <motion.button
-                  className="mr-4 w-10 h-10 bg-red-600/50 hover:bg-red-600 rounded-full flex items-center justify-center text-white backdrop-blur-sm flex-shrink-0"
+                  className="mr-4 w-10 h-10 bg-red-900/50 hover:bg-red-900 rounded-full flex items-center justify-center text-white backdrop-blur-sm flex-shrink-0"
                   onClick={closePopup}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -229,7 +229,7 @@ const Portfolio = () => {
               </motion.div>
               <div className="absolute left-4 right-4 top-1/2 -translate-y-1/2 flex justify-between pointer-events-none">
                 <motion.button
-                  className="w-10 h-10 bg-black/50 hover:bg-red-600/50 rounded-full flex items-center justify-center text-white backdrop-blur-sm pointer-events-auto"
+                  className="w-10 h-10 bg-black/50 hover:bg-red-900/50 rounded-full flex items-center justify-center text-white backdrop-blur-sm pointer-events-auto"
                   onClick={handlePrevious}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -237,7 +237,7 @@ const Portfolio = () => {
                   <ChevronLeft size={24} />
                 </motion.button>
                 <motion.button
-                  className="w-10 h-10 bg-black/50 hover:bg-red-600/50 rounded-full flex items-center justify-center text-white backdrop-blur-sm pointer-events-auto"
+                  className="w-10 h-10 bg-black/50 hover:bg-red-900/50 rounded-full flex items-center justify-center text-white backdrop-blur-sm pointer-events-auto"
                   onClick={handleNext}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}

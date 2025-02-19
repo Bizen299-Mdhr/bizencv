@@ -129,7 +129,7 @@ const Resume = () => {
           <motion.a
             href="/path-to-your-resume.pdf"
             download="Bizen_Manandhar_Resume.pdf"
-            className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded inline-flex items-center"
+            className="bg-red-900 hover:bg-red-900 text-white font-bold py-2 px-4 rounded inline-flex items-center"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

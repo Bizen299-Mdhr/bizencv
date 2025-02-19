@@ -25,10 +25,10 @@ const Home = () => {
       className="min-h-screen relative flex items-center pt-20 overflow-hidden"
       style={{
         backgroundImage: `url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1580089592698-WiXE8UjziejfFtlf1hROoX2hqT86Mm.jpeg")`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundSize: "fit",
+        backgroundPosition: "right",
         backgroundRepeat: "no-repeat",
-        filter: "grayscale(100%) contrast(120%) brightness(50%)",
+        filter: "grayscale(50%) contrast(100%) brightness(50%)",
       }}
     >
       {/* Dark overlay */}
@@ -36,13 +36,13 @@ const Home = () => {
 
       {/* Social Media Links */}
       <div className="fixed left-8 top-1/2 -translate-y-1/2 z-10 flex flex-col gap-6">
-        <Link href="#" className="text-gray-400 hover:text-red-600 transition-colors">
+        <Link href="#" className="text-gray-400 hover:text-red-900 transition-colors">
           <Facebook className="w-5 h-5" />
         </Link>
-        <Link href="#" className="text-gray-400 hover:text-red-600 transition-colors">
+        <Link href="#" className="text-gray-400 hover:text-red-900 transition-colors">
           <Twitter className="w-5 h-5" />
         </Link>
-        <Link href="#" className="text-gray-400 hover:text-red-600 transition-colors">
+        <Link href="#" className="text-gray-400 hover:text-red-900 transition-colors">
           <Instagram className="w-5 h-5" />
         </Link>
         <div className="w-px h-20 bg-gray-600 mx-auto mt-4" />
@@ -62,7 +62,7 @@ const Home = () => {
           className="max-w-2xl"
         >
           <motion.h2
-            className="text-red-600 mb-4 text-lg futuristic-text"
+            className="text-red-900 mb-4 text-lg futuristic-text"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}

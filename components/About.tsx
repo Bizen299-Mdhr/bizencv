@@ -43,7 +43,7 @@ const SkillBar = ({ skill }: { skill: Skill }) => {
       </div>
       <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
         <motion.div
-          className="h-full bg-red-600 rounded-full"
+          className="h-full bg-red-900 rounded-full"
           initial={{ width: 0 }}
           whileInView={{ width: `${skill.percentage}%` }}
           transition={{ duration: 1, ease: "easeOut" }}

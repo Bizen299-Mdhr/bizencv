@@ -77,10 +77,10 @@ const Navigation = () => {
               whileHover={{ scale: 1.2 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <span className="text-red-600">B</span>IZEN
+              <span className="text-red-900">B</span>IZEN
             </motion.span>
             <motion.div
-              className="h-0.5 bg-red-600 w-0 group-hover:w-full transition-all duration-300"
+              className="h-0.5 bg-red-900 w-0 group-hover:w-full transition-all duration-300"
               initial={false}
             />
           </Link>
@@ -91,7 +91,7 @@ const Navigation = () => {
                 <motion.button
                   onClick={() => scrollToSection(item.id)}
                   className={`relative px-2 py-1 transition-colors ${
-                    activeSection === item.id ? "text-red-600" : "text-gray-300 hover:text-red-600"
+                    activeSection === item.id ? "text-red-900" : "text-gray-300 hover:text-red-900"
                   }`}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
@@ -101,7 +101,7 @@ const Navigation = () => {
                   {activeSection === item.id && (
                     <motion.div
                       layoutId="activeSection"
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-900"
                       initial={false}
                       transition={{
                         type: "spring",

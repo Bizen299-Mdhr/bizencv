@@ -35,7 +35,7 @@ export default function MainPage() {
 
       {/* Progress bar */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-red-600 transform-origin-0 z-50"
+        className="fixed top-0 left-0 right-0 h-1 bg-red-900 transform-origin-0 z-50"
         style={{ scaleX }}
         transition={{ type: "spring", stiffness: 50, damping: 20 }}
       />

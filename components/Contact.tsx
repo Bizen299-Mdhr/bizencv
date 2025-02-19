@@ -96,7 +96,7 @@ const Contact = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-3 py-2 text-gray-300 bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-3 py-2 text-gray-300 bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-red-900"
               placeholder="Your Name"
             />
             {errors.name && <p className="mt-1 text-red-900 text-sm">{errors.name}</p>}
@@ -111,7 +111,7 @@ const Contact = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-3 py-2 text-gray-300 bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-3 py-2 text-gray-300 bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-red-900"
               placeholder="your@email.com"
             />
             {errors.email && <p className="mt-1 text-red-900 text-sm">{errors.email}</p>}
@@ -126,7 +126,7 @@ const Contact = () => {
               name="subject"
               value={formData.subject}
               onChange={handleChange}
-              className="w-full px-3 py-2 text-gray-300 bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-3 py-2 text-gray-300 bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-red-900"
               placeholder="Message Subject"
             />
             {errors.subject && <p className="mt-1 text-red-900 text-sm">{errors.subject}</p>}
@@ -141,7 +141,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               rows={4}
-              className="w-full px-3 py-2 text-gray-300 bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-3 py-2 text-gray-300 bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-red-900"
               placeholder="Your Message"
             ></textarea>
             {errors.message && <p className="mt-1 text-red-900 text-sm">{errors.message}</p>}
@@ -151,7 +151,7 @@ const Contact = () => {
               type="submit"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 transition duration-300 flex items-center justify-center"
+              className="w-full bg-red-900 text-white py-2 px-4 rounded-md hover:bg-red-900 transition duration-300 flex items-center justify-center"
             >
               <Send className="mr-2" size={18} />
               Send Message

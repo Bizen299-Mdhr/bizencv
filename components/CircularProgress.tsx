@@ -5,7 +5,7 @@ const CircularProgress = ({ value, label }: { value: number; label: string }) =>
     <svg className="w-full h-full" viewBox="0 0 100 100">
       <circle className="text-gray-800 stroke-current" strokeWidth="8" cx="50" cy="50" r="40" fill="transparent" />
       <motion.circle
-        className="text-red-600 stroke-current"
+        className="text-red-900 stroke-current"
         strokeWidth="8"
         strokeLinecap="round"
         cx="50"

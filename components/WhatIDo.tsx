@@ -30,7 +30,7 @@ const WhatIDo = () => {
             { icon: Camera, title: "Photography" },
           ].map((service) => (
             <motion.div key={service.title} whileHover={{ scale: 1.05 }} className="p-6 bg-black rounded-lg">
-              <service.icon className="w-12 h-12 text-red-600 mb-4" />
+              <service.icon className="w-12 h-12 text-red-900 mb-4" />
               <h3 className="text-xl font-bold mb-2">{service.title}</h3>
               <p className="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </motion.div>

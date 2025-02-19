@@ -68,7 +68,7 @@ const Blog = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded"
+                    className="bg-red-900 hover:bg-red-900 text-white px-4 py-2 rounded"
                   >
                     Read More
                   </motion.button>
