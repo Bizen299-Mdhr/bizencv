@@ -1,5 +1,5 @@
 import { Inter, Orbitron, Rajdhani } from "next/font/google"
-import "./globals.css"
+import "../styles/globals.css"
 import type React from "react"
 import { Metadata } from "next"
 
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     default: 'Bizen MDHR',
     template: '%s | Site Name', // For dynamic titles in child pages
   },
-  description: 'Your default page description',
-  keywords: ['keyword1', 'keyword2', 'keyword3'],
+  description: 'Bizen MDHR is a software development company that provides custom software development services to businesses of all sizes.',
+  keywords: ['cv','profile','custom software development', 'web development', 'mobile development', 'software development', 'software development company', 'software development services', 'software development company in nepal', 'software development company in kathmandu', 'software development company in biratnagar', 'software development company in birgunj', 'software development company in pokhara', 'software development company in nepal'],
   openGraph: {
     title: 'Open Graph Title',
     description: 'Open Graph Description',
