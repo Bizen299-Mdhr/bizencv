@@ -7,34 +7,43 @@ const Resume = () => {
   const resumeData = {
     education: [
       {
-        degree: "Master of Science in Computer Science",
-        school: "Stanford University",
-        year: "2018 - 2020",
+        degree: "Bachelors in Computer Application",
+        school: "Indira Gandhi National Open University ",
+        year: "2020",
       },
       {
-        degree: "Bachelor of Science in Software Engineering",
-        school: "Massachusetts Institute of Technology",
-        year: "2014 - 2018",
+        degree: "Intermediate +2 Science",
+        school: "Kathmandu Institute of science and technology",
+        year: "2008",
+      },
+      {
+        degree: "School Leaving Certificate",
+        school: "Holy vision International School",
+        year: "2005",
       },
     ],
     experience: [
       {
-        position: "Senior Full Stack Developer",
-        company: "Tech Innovators Inc.",
-        year: "2020 - Present",
+        position: "Senior Full Stack Developer / Tech lead",
+        company: "EK Solutions",
+        year: "2017-01 - Present",
         responsibilities: [
           "Lead development of scalable web applications",
           "Mentor junior developers and conduct code reviews",
-          "Implement CI/CD pipelines and DevOps best practices",
+          "Implement CI/CD pipelines and Some DevOps best practices ",
+          "Manage and monitor the performance of the team",
+          "Design and implement new features and improvements to existing systems",
+          "Collaborate with cross-functional teams to deliver high-quality software",
+          "Optimized database queries and improved application performance",
         ],
       },
       {
-        position: "Software Engineer",
+        position: "Applied Innovation",
         company: "StartUp Solutions LLC",
-        year: "2018 - 2020",
+        year: "2013 - 2016",
         responsibilities: [
-          "Developed and maintained multiple client-facing applications",
-          "Collaborated with cross-functional teams to deliver high-quality software",
+          "Worked as a Senior PHP Programmer",
+          "Successful completed a web application project of Shinga durbar :Audit observation record and tracking System AND Debt Management System",
           "Optimized database queries and improved application performance",
         ],
       },
@@ -46,9 +55,16 @@ const Resume = () => {
       "Python",
       "SQL/NoSQL Databases",
       "AWS/Azure Cloud Services",
-      "Docker/Kubernetes",
+      "Some of DevOps tools: Docker/Kubernetes",
+      "Git/GitHub/GitLab",
+      "GCP",
       "GraphQL",
       "Machine Learning",
+      "Laravel",
+      "Wordpress",
+      "HTML/CSS/Tailwind",
+      "Bootstrap",
+      "JQuery",
     ],
   }
 
@@ -127,7 +143,7 @@ const Resume = () => {
         </div>
         <div className="mt-12 flex justify-center">
           <motion.a
-            href="/path-to-your-resume.pdf"
+            href="Bijendra Manandhar.pdf"
             download="Bizen_Manandhar_Resume.pdf"
             className="bg-red-900 hover:bg-red-900 text-white font-bold py-2 px-4 rounded inline-flex items-center"
             whileHover={{ scale: 1.05 }}
