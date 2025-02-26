@@ -6,7 +6,7 @@ import Navigation from "../components/Navigation"
 import Home from "../components/Home"
 import About from "../components/About"
 import WhatIDo from "../components/WhatIDo"
-import Portfolio from "../components/Portfolio"
+import MyWorks from "../components/MyWorks"
 import Resume from "../components/Resume"
 import Blog from "../components/Blog"
 import Contact from "../components/Contact"
@@ -43,7 +43,7 @@ export default function MainPage() {
       <Home />
       <About />
       <WhatIDo />
-      <Portfolio />
+      <MyWorks />
       <Resume />
       <Blog />
       <Contact />
