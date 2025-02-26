@@ -25,7 +25,7 @@ const servicesData = [
   {
     icon: Terminal,
     title: "DevOps",
-    description: "Experience with CI/CD pipelines, Docker containerization, and cloud platforms like AWS and Google Cloud."
+    description: "Experience with CI/CD pipelines, Docker containerization, cloud platforms (AWS & GCP), and Google Workspace administration. Proficient in cloud infrastructure management and deployment automation."
   },
   // {
   //   icon: Palette,

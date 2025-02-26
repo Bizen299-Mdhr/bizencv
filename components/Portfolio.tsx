@@ -10,17 +10,17 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react"
 const portfolioItems = [
   {
     id: 1,
-    title: "Project 1",
+    title: "MySRM",
     image: "https://picsum.photos/id/1018/800/600",
-    category: "Web Design",
-    description: "A responsive website design for a local business.",
+    category: "Web Backend / frontend System",
+    description: "MySRM is a SaaS for startup relationship management From scouting to M&A, MySRM helps corporates to leverage the value added brought by startups Public launch in October 2017."
   },
   {
     id: 2,
-    title: "Project 2",
-    image: "https://picsum.photos/id/1015/800/600",
-    category: "Development",
-    description: "Custom e-commerce platform with advanced features.",
+    title: "MDIS CRM",
+    image: "/projects/mdis2.png",
+    category: "Laravel web crm development",
+    description: " Save The children - MDIS System",
     
   },
   {
