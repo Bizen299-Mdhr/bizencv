@@ -77,7 +77,23 @@ const Navigation = () => {
               whileHover={{ scale: 1.2 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <span className="text-red-900">B</span>IZEN
+              <motion.span
+                className="text-red-900 inline-block"
+                whileHover={{
+                  rotate: [0, -10, 10, -10, 0],
+                  scale: [1, 1.2, 0.9, 1.1, 1],
+                  transition: {
+                    duration: 0.6,
+                    ease: "easeInOut",
+                  },
+                }}
+                drag
+                dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                dragElastic={0.7}
+              >
+                B
+              </motion.span>
+              IZEN
             </motion.span>
             <motion.div
               className="h-0.5 bg-red-900 w-0 group-hover:w-full transition-all duration-300"

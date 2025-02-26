@@ -28,7 +28,7 @@ const Home = () => {
         backgroundSize: "fit",
         backgroundPosition: "right",
         backgroundRepeat: "no-repeat",
-        filter: "grayscale(50%) contrast(100%) brightness(50%)",
+        filter: "grayscale(10%) contrast(100%) brightness(100%)",
       }}
     >
       {/* Dark overlay */}

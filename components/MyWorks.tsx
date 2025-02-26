@@ -23,10 +23,7 @@ const works = [
   {
     id: 2,
     title: "Save The children - MDIS System",
-    images: [
-      "./projects/mdis1.png",
-      "./projects/mdis2.png"
-    ],
+    images: ["./projects/mdis1.png", "./projects/mdis2.png"],
     category: "Laravel Development",
     description: `Developed a comprehensive management system for Save The Children featuring integrated SMS capabilities.`,
   },
@@ -86,18 +83,32 @@ const MyWorks = () => {
     if (selectedProjectIndex !== null) {
       document.body.style.overflow = "hidden"
 
-      // Add event listener for ESC key
-      const handleEscKey = (e: KeyboardEvent) => {
-        if (e.key === "Escape") {
+      // Add event listener for keyboard navigation
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === "Escape" || e.key=== 'ArrowUp') {
           closePopup()
+        } else if (e.key === "ArrowLeft") {
+          // Navigate to previous image
+          if (selectedProjectIndex !== null) {
+            const imageCount = works[selectedProjectIndex].images.length
+            setCurrentImageIndex((prev) => (prev - 1 + imageCount) % imageCount)
+            setLoading(true)
+          }
+        } else if (e.key === "ArrowRight") {
+          // Navigate to next image
+          if (selectedProjectIndex !== null) {
+            const imageCount = works[selectedProjectIndex].images.length
+            setCurrentImageIndex((prev) => (prev + 1) % imageCount)
+            setLoading(true)
+          }
         }
       }
 
-      window.addEventListener("keydown", handleEscKey)
+      window.addEventListener("keydown", handleKeyDown)
 
       // Cleanup
       return () => {
-        window.removeEventListener("keydown", handleEscKey)
+        window.removeEventListener("keydown", handleKeyDown)
       }
     } else {
       document.body.style.overflow = "unset"
@@ -352,4 +363,3 @@ const MyWorks = () => {
 }
 
 export default MyWorks
-
