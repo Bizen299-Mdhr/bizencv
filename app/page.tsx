@@ -51,10 +51,11 @@ export default function MainPage() {
       <section className="py-20">
         <div className="container mx-auto px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+
             <Counter end={Math.floor((new Date().getTime() - new Date('2017-02-01').getTime()) / (1000 * 60 * 60))}title="Hours of Work" />
-            <Counter end={25} title="Projects Done" />
-            <Counter end={25} title="Happy Clients" />
+            <Counter end={12} title="Projects Done" />
             <Counter end={2} title="Awards Won" />
+            
           </div>
         </div>
       </section>

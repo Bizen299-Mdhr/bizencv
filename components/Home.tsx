@@ -79,10 +79,29 @@ const Home = () => {
               }}
             />
           </motion.h2>
-          <h1 className="text-7xl font-bold mb-12 text-white theme-glow">
+          <h1 className="text-3xl font-bold mb-12 text-white theme-glow">
             <TypewriterComponent
               options={{
-                strings: ["DEVELOPER","FREELANCER"],
+                strings: [
+                    "DEVELOPER",
+                    "BACKEND ENGINEER",
+                    "API ARCHITECT",
+                    "MICROSERVICES SPECIALIST",
+                    "DATABASE EXPERT",
+                    "SYSTEMS INTEGRATOR",
+                    "DEVOPS PRACTITIONER",
+                    "SOFTWARE ARCHITECT",
+                    "NODE.JS DEVELOPER",
+                    "PYTHON DEVELOPER",
+                    "SERVER-SIDE DEVELOPER",
+                    "REST API DEVELOPER",
+                    "GRAPHQL DEVELOPER",
+                    "SOFTWARE ENGINEER",
+                    "TECH LEAD",
+                    "SOLUTIONS ARCHITECT",
+                    "SYSTEMS ENGINEER",
+                    "INFRASTRUCTURE DEVELOPER"
+                ],
                 autoStart: true,
                 loop: true,
                 cursor: "",
