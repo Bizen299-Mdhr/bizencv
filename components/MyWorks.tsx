@@ -72,7 +72,7 @@ const works = [
     techStack: [
       { name: "Express.js" },
       { name: "PostgreSQL" },
-      {name: "MongoDB"},
+      { name: "MongoDB"},
       { name: "AWS" },
       { name: "Stripe" },
       { name: "BullMQ" },
@@ -101,6 +101,34 @@ const works = [
       "Developed CRM application for a JAPAN real estate company.",
       "Implemented complex property management system.",
       "Created real-time notification system for property updates.",
+    ],
+  },
+  {
+    id: 7,
+    title: "RECKI",
+    images: [
+      "./projects/recki1.png",
+      "./projects/recki2.png",
+    ],
+    category: "Node js Development",
+    techStack: [
+      { name: "Mono Repo Express js" },
+      { name: "PostgreSQL" },
+      { name: "Redis" },
+      { name: "BullMQ" },
+      { name: "GCP" },
+      { name: "Google Analytics" },
+      { name: "Kubernetes load balancer" },
+      { name: "Docker" },
+    ],
+    description: [
+      "Implemented a efficient system backend API for RECKI app",
+      "Implemented Google Analytics for tracking user behavior",
+      "Implemented Kubernetes load balancer for efficient resource management",
+      "Implemented Docker for containerization",
+      "Implemented BullMQ for background job processing",
+      "Implemented GCP for scalable infrastructure and storage",
+      "Implemented Redis for caching",
     ],
   },
   {
