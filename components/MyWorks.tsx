@@ -494,9 +494,26 @@ const MyWorks = () => {
                       <ChevronRight size={24} />
                     </motion.button>
                   </div>
+
+                  {/* Overlapping Description Section */}
+                  <motion.div
+                    className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-sm p-4 md:p-6 max-h-[40%] overflow-y-auto custom-scrollbar"
+                    initial={{ y: '100%' }}
+                    animate={{ y: 0 }}
+                    transition={{ duration: 0.3, ease: 'easeOut' }}
+                  >
+                    <h4 className="text-base md:text-lg font-semibold mb-2 text-white">Description</h4>
+                    <ul className="space-y-2">
+                      {works[selectedProjectIndex].description.map((desc, index) => (
+                        <li key={index} className="text-sm md:text-base text-gray-300">
+                          • {desc}
+                        </li>
+                      ))}
+                    </ul>
+                  </motion.div>
                 </div>
 
-                {/* Details Section - Make it full width on mobile */}
+                {/* Tech Stack Section */}
                 <div className="p-4 md:p-6 bg-gray-900/50 backdrop-blur-sm overflow-y-auto max-h-[300px] md:max-h-[600px] custom-scrollbar">
                   <div className="flex flex-col space-y-4">
                     <div className="flex justify-between items-start">
@@ -514,25 +531,12 @@ const MyWorks = () => {
                       </motion.button>
                     </div>
 
-                    <div className="space-y-4">
-                      <div>
-                        <h4 className="text-base md:text-lg font-semibold mb-2">Description</h4>
-                        <ul className="space-y-2">
-                          {works[selectedProjectIndex].description.map((desc, index) => (
-                            <li key={index} className="text-sm md:text-base text-gray-300">
-                              • {desc}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h4 className="text-base md:text-lg font-semibold mb-2">Tech Stack</h4>
-                        <div className="space-y-2">
-                          {works[selectedProjectIndex].techStack.map((tech, index) => (
-                            <TechStackBar key={index} tech={tech} />
-                          ))}
-                        </div>
+                    <div>
+                      <h4 className="text-base md:text-lg font-semibold mb-2">Tech Stack</h4>
+                      <div className="space-y-2">
+                        {works[selectedProjectIndex].techStack.map((tech, index) => (
+                          <TechStackBar key={index} tech={tech} />
+                        ))}
                       </div>
                     </div>
                   </div>
