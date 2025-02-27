@@ -43,22 +43,21 @@ const works = [
     title: "UNPLUG",
     images: [
       "./projects/unplug1.png",
-      "./projects/unplug2.png",
-      "./projects/unplug3.png",
+      "./projects/unplug2.png"
     ],
     category: "Node Js Development",
-    description: "Developed Backend Api on Express js , Postgresql , AWS , Queue and other technologies.",
+    description: "Developed Backend Api on Express js, Postgresql, AWS, Stripe Payment Gateway, BullMQ and other technologies.",
   },
   {
     id: 5,
-    title: "Project 5",
+    title: "MyPlace",
     images: [
-      "https://picsum.photos/id/1020/800/600",
-      "https://picsum.photos/id/1015/800/600",
-      "https://picsum.photos/id/1019/800/600",
+      "./projects/myplace1.png",
+      "./projects/myplace2.png",
+      "./projects/myplace3.png",
     ],
     category: "Development",
-    description: "Full-stack web application for project management.",
+    description: "Developed CRM application for a JAPAN real estate company.",
   },
   {
     id: 6,
