@@ -4,6 +4,7 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { Send } from "lucide-react"
 import type React from "react"
+import toast, { Toaster } from 'react-hot-toast'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -57,15 +58,47 @@ const Contact = () => {
     return isValid
   }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (validateForm()) {
-      // Log form data to console (for demonstration)
-      console.log("Form submitted:", formData)
-      // Reset form
-      setFormData({ name: "", email: "", subject: "", message: "" })
-      // Show success message
-      alert("Thank you for your message! This is a demo form.")
+      try {
+        const response = await fetch('/api/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        })
+
+        const result = await response.json()
+        if (response.ok) {
+          setFormData({ name: "", email: "", subject: "", message: "" })
+          toast.success("Thank you for your message! I'll get back to you soon.", {
+            duration: 4000,
+            position: 'bottom-center',
+            style: {
+              background: '#1f2937',
+              color: '#fff',
+              padding: '16px',
+              borderRadius: '8px',
+            },
+          })
+        } else {
+          throw new Error(result.error || 'Failed to send message')
+        }
+      } catch (error) {
+        console.error('Error sending email:', error)
+        toast.error('Failed to send message. Please try again later.', {
+          duration: 4000,
+          position: 'bottom-center',
+          style: {
+            background: '#dc2626',
+            color: '#fff',
+            padding: '16px',
+            borderRadius: '8px',
+          },
+        })
+      }
     }
   }
 
@@ -83,6 +116,7 @@ const Contact = () => {
       }}
       className="min-h-screen py-20 bg-gray-900 flowing-gradient flex items-center"
     >
+      <Toaster />
       <div className="container mx-auto px-8">
         <h2 className="text-3xl font-bold mb-12 text-center">Contact Me</h2>
         <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
