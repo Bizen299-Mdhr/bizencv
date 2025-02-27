@@ -86,14 +86,15 @@ const works = [
     images: ["./projects/myplace1.png", "./projects/myplace2.png", "./projects/myplace3.png"],
     category: "Full Stack Development",
     techStack: [
-      { name: "React", percentage: 90 },
-      { name: "Node.js", percentage: 85 },
+      { name: "Express.js", percentage: 90 },
       { name: "PostgreSQL", percentage: 80 },
       { name: "Redis", percentage: 75 },
+      { name: "BullMQ", percentage: 90 },
+      { name: "Vue.js", percentage: 85 },
     ],
     description: [
       "Developed CRM application for a JAPAN real estate company.",
-      "Implemented complex property management and booking system.",
+      "Implemented complex property management system.",
       "Created real-time notification system for property updates.",
     ],
   },
@@ -108,7 +109,6 @@ const works = [
     category: "Full Stack Development",
     techStack: [
       { name: "Python", percentage: 85 },
-      { name: "TensorFlow", percentage: 80 },
       { name: "React", percentage: 90 },
       { name: "FastAPI", percentage: 85 },
     ],
@@ -117,196 +117,7 @@ const works = [
       "Implemented machine learning models for predictive analytics.",
       "Created interactive dashboards for data visualization.",
     ],
-  },
-  {
-    id: 7,
-    title: "AI-Powered Analytics Platform",
-    images: [
-      "https://picsum.photos/id/1021/800/600",
-      "https://picsum.photos/id/1016/800/600",
-      "https://picsum.photos/id/1020/800/600",
-    ],
-    category: "Full Stack Development",
-    techStack: [
-      { name: "Python", percentage: 85 },
-      { name: "TensorFlow", percentage: 80 },
-      { name: "React", percentage: 90 },
-      { name: "FastAPI", percentage: 85 },
-    ],
-    description: [
-      "Built an AI-powered analytics platform for business intelligence.",
-      "Implemented machine learning models for predictive analytics.",
-      "Created interactive dashboards for data visualization.",
-    ],
-  },
-  {
-    id: 8,
-    title: "AI-Powered Analytics Platform",
-    images: [
-      "https://picsum.photos/id/1021/800/600",
-      "https://picsum.photos/id/1016/800/600",
-      "https://picsum.photos/id/1020/800/600",
-    ],
-    category: "Full Stack Development",
-    techStack: [
-      { name: "Python", percentage: 85 },
-      { name: "TensorFlow", percentage: 80 },
-      { name: "React", percentage: 90 },
-      { name: "FastAPI", percentage: 85 },
-    ],
-    description: [
-      "Built an AI-powered analytics platform for business intelligence.",
-      "Implemented machine learning models for predictive analytics.",
-      "Created interactive dashboards for data visualization.",
-    ],
-  },
-  {
-    id: 9,
-    title: "AI-Powered Analytics Platform",
-    images: [
-      "https://picsum.photos/id/1021/800/600",
-      "https://picsum.photos/id/1016/800/600",
-      "https://picsum.photos/id/1020/800/600",
-    ],
-    category: "Full Stack Development",
-    techStack: [
-      { name: "Python", percentage: 85 },
-      { name: "TensorFlow", percentage: 80 },
-      { name: "React", percentage: 90 },
-      { name: "FastAPI", percentage: 85 },
-    ],
-    description: [
-      "Built an AI-powered analytics platform for business intelligence.",
-      "Implemented machine learning models for predictive analytics.",
-      "Created interactive dashboards for data visualization.",
-    ],
-  },
-   {
-    id: 10,
-    title: "AI-Powered Analytics Platform",
-    images: [
-      "https://picsum.photos/id/1021/800/600",
-      "https://picsum.photos/id/1016/800/600",
-      "https://picsum.photos/id/1020/800/600",
-    ],
-    category: "Full Stack Development",
-    techStack: [
-      { name: "Python", percentage: 85 },
-      { name: "TensorFlow", percentage: 80 },
-      { name: "React", percentage: 90 },
-      { name: "FastAPI", percentage: 85 },
-    ],
-    description: [
-      "Built an AI-powered analytics platform for business intelligence.",
-      "Implemented machine learning models for predictive analytics.",
-      "Created interactive dashboards for data visualization.",
-    ],
-  },
-     {
-    id: 11,
-    title: "AI-Powered Analytics Platform",
-    images: [
-      "https://picsum.photos/id/1021/800/600",
-      "https://picsum.photos/id/1016/800/600",
-      "https://picsum.photos/id/1020/800/600",
-    ],
-    category: "Full Stack Development",
-    techStack: [
-      { name: "Python", percentage: 85 },
-      { name: "TensorFlow", percentage: 80 },
-      { name: "React", percentage: 90 },
-      { name: "FastAPI", percentage: 85 },
-    ],
-    description: [
-      "Built an AI-powered analytics platform for business intelligence.",
-      "Implemented machine learning models for predictive analytics.",
-      "Created interactive dashboards for data visualization.",
-    ],
-  },
-   {
-    id: 12,
-    title: "AI-Powered Analytics Platform",
-    images: [
-      "https://picsum.photos/id/1021/800/600",
-      "https://picsum.photos/id/1016/800/600",
-      "https://picsum.photos/id/1020/800/600",
-    ],
-    category: "Full Stack Development",
-    techStack: [
-      { name: "Python", percentage: 85 },
-      { name: "TensorFlow", percentage: 80 },
-      { name: "React", percentage: 90 },
-      { name: "FastAPI", percentage: 85 },
-    ],
-    description: [
-      "Built an AI-powered analytics platform for business intelligence.",
-      "Implemented machine learning models for predictive analytics.",
-      "Created interactive dashboards for data visualization.",
-    ],
-  },
-  {
-    id: 13,
-    title: "AI-Powered Analytics Platform",
-    images: [
-      "https://picsum.photos/id/1021/800/600",
-      "https://picsum.photos/id/1016/800/600",
-      "https://picsum.photos/id/1020/800/600",
-    ],
-    category: "Full Stack Development",
-    techStack: [
-      { name: "Python", percentage: 85 },
-      { name: "TensorFlow", percentage: 80 },
-      { name: "React", percentage: 90 },
-      { name: "FastAPI", percentage: 85 },
-    ],
-    description: [
-      "Built an AI-powered analytics platform for business intelligence.",
-      "Implemented machine learning models for predictive analytics.",
-      "Created interactive dashboards for data visualization.",
-    ],
-  },
-  {
-    id: 14,
-    title: "AI-Powered Analytics Platform",
-    images: [
-      "https://picsum.photos/id/1021/800/600",
-      "https://picsum.photos/id/1016/800/600",
-      "https://picsum.photos/id/1020/800/600",
-    ],
-    category: "Full Stack Development",
-    techStack: [
-      { name: "Python", percentage: 85 },
-      { name: "TensorFlow", percentage: 80 },
-      { name: "React", percentage: 90 },
-      { name: "FastAPI", percentage: 85 },
-    ],
-    description: [
-      "Built an AI-powered analytics platform for business intelligence.",
-      "Implemented machine learning models for predictive analytics.",
-      "Created interactive dashboards for data visualization.",
-    ],
-  },
-  {
-    id: 15,
-    title: "AI-Powered Analytics Platform",
-    images: [
-      "https://picsum.photos/id/1021/800/600",
-      "https://picsum.photos/id/1016/800/600",
-      "https://picsum.photos/id/1020/800/600",
-    ],
-    category: "Full Stack Development",
-    techStack: [
-      { name: "Python", percentage: 85 },
-      { name: "TensorFlow", percentage: 80 },
-      { name: "React", percentage: 90 },
-      { name: "FastAPI", percentage: 85 },
-    ],
-    description: [
-      "Built an AI-powered analytics platform for business intelligence.",
-      "Implemented machine learning models for predictive analytics.",
-      "Created interactive dashboards for data visualization.",
-    ],
-  },
+  }
 ]
 
 // Extract unique categories
@@ -652,10 +463,11 @@ const MyWorks = () => {
                     alt={works[selectedProjectIndex].title}
                     width={800}
                     height={600}
-                    className={`object-contain w-full h-full transition-opacity duration-300 ${
+                    className={`object-cover w-full h-full transition-opacity duration-300 ${
                       loading ? "opacity-0" : "opacity-100"
                     }`}
                     onLoadingComplete={() => setLoading(false)}
+                    style={{ objectFit: 'contain', maxWidth: '100%', maxHeight: '100%' }}
                   />
 
                   {/* Image counter indicator */}
