@@ -11,14 +11,14 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react"
 const works = [
   {
     id: 1,
-    title: "Project 1",
+    title: " Bigmart CRM 2.0",
     images: [
-      "https://picsum.photos/id/1018/800/600",
-      "https://picsum.photos/id/1025/800/600",
-      "https://picsum.photos/id/1015/800/600",
+      "./projects/bigmart1.png",
+      "./projects/bigmart2.png",
+      "./projects/bigmart3.png"
     ],
-    category: "Web Design",
-    description: "A responsive website design for a local business.",
+    category: "Node Js Development",
+    description: "Developed a Crm for Bigmart with Express js, Nest js, MongoDB, Mongoose and other technologies.",
   },
   {
     id: 2,
@@ -29,25 +29,25 @@ const works = [
   },
   {
     id: 3,
-    title: "Project 3",
+    title: "MIS System",
     images: [
-      "https://picsum.photos/id/1019/800/600",
-      "https://picsum.photos/id/1020/800/600",
-      "https://picsum.photos/id/1021/800/600",
+      "./projects/mis1.png",
+      "./projects/mis11.png",
+      "./projects/mis2.png",
     ],
-    category: "UI/UX",
-    description: "User interface redesign for a mobile application.",
+    category: "Laravel Development",
+    description: "Developed A management system for a Redcross organization with app integration.",
   },
   {
     id: 4,
-    title: "Project 4",
+    title: "UNPLUG",
     images: [
-      "https://picsum.photos/id/1016/800/600",
-      "https://picsum.photos/id/1018/800/600",
-      "https://picsum.photos/id/1025/800/600",
+      "./projects/unplug1.png",
+      "./projects/unplug2.png",
+      "./projects/unplug3.png",
     ],
-    category: "Web Design",
-    description: "Modern landing page design for a tech startup.",
+    category: "Node Js Development",
+    description: "Developed Backend Api on Express js , Postgresql , AWS , Queue and other technologies.",
   },
   {
     id: 5,
