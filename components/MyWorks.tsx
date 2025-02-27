@@ -357,7 +357,7 @@ const MyWorks = () => {
 
   useEffect(() => {
     setCurrentPage(0) // Reset to first page when category changes
-  }, [])
+  }, [selectedCategory])
 
   useEffect(() => {
     if (scrollRef.current) {
