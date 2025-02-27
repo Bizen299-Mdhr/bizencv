@@ -15,11 +15,12 @@ const works = [
     images: ["./projects/bigmart1.png", "./projects/bigmart2.png", "./projects/bigmart3.png"],
     category: "Node.js Development",
     techStack: [
-      { name: "Node.js", percentage: 90 },
-      { name: "Express.js", percentage: 85 },
-      { name: "Nest.js", percentage: 80 },
+      { name: "Express.js", percentage: 95 },
       { name: "MongoDB", percentage: 85 },
       { name: "Mongoose", percentage: 80 },
+      { name: "BullMQ", percentage: 95 },
+      { name: "Firebase Integration", percentage: 90 },
+      { name: "Google Analytics", percentage: 60 },
     ],
     description: [
       "Developed a comprehensive CRM system for Bigmart using modern Node.js technologies.",
