@@ -13,14 +13,14 @@ const works = [
     id: 1,
     title: "Bigmart CRM 2.0",
     images: ["./projects/bigmart1.png", "./projects/bigmart2.png", "./projects/bigmart3.png"],
-    category: "Node.js Development",
+    category: "Node js Development",
     techStack: [
-      { name: "Express.js", percentage: 95 },
-      { name: "MongoDB", percentage: 85 },
-      { name: "Mongoose", percentage: 80 },
-      { name: "BullMQ", percentage: 95 },
-      { name: "Firebase Integration", percentage: 90 },
-      { name: "Google Analytics", percentage: 60 },
+      { name: "Express.js" },
+      { name: "MongoDB" },
+      { name: "Mongoose" },
+      { name: "BullMQ" },
+      { name: "Firebase Integration" },
+      { name: "Google Analytics" },
     ],
     description: [
       "Developed a comprehensive CRM system for Bigmart using modern Node.js technologies.",
@@ -34,10 +34,11 @@ const works = [
     images: ["./projects/mdis1.png", "./projects/mdis2.png"],
     category: "Laravel Development",
     techStack: [
-      { name: "Laravel", percentage: 90 },
-      { name: "MySQL", percentage: 85 },
-      { name: "Redis", percentage: 75 },
-      { name: "Vue.js", percentage: 80 },
+      { name: "Laravel" },
+      { name: "MySQL" },
+      { name: "Redis" },
+      { name: "Sparrow SMS" },
+      { name: "GIS Map" },
     ],
     description: [
       "Developed a comprehensive management system for Save The Children.",
@@ -51,10 +52,11 @@ const works = [
     images: ["./projects/mis1.png", "./projects/mis11.png", "./projects/mis2.png"],
     category: "Laravel Development",
     techStack: [
-      { name: "Laravel", percentage: 90 },
-      { name: "MySQL", percentage: 85 },
-      { name: "React Native", percentage: 80 },
-      { name: "Redux", percentage: 75 },
+      { name: "Laravel Backend / API" },
+      { name: "MySQL" },
+      { name: "Sparrow SMS" },
+      { name: "GIS Map" },
+      { name: "Leaflet JS" },
     ],
     description: [
       "Developed a management system for a Redcross organization.",
@@ -66,31 +68,34 @@ const works = [
     id: 4,
     title: "UNPLUG",
     images: ["./projects/unplug1.png", "./projects/unplug2.png"],
-    category: "Node.js Development",
+    category: "Node js Development",
     techStack: [
-      { name: "Express.js", percentage: 90 },
-      { name: "PostgreSQL", percentage: 85 },
-      { name: "AWS", percentage: 80 },
-      { name: "Stripe", percentage: 75 },
-      { name: "BullMQ", percentage: 70 },
+      { name: "Express.js" },
+      { name: "PostgreSQL" },
+      {name: "MongoDB"},
+      { name: "AWS" },
+      { name: "Stripe" },
+      { name: "BullMQ" },
+      { name: "React" }
     ],
     description: [
       "Developed robust backend API using Express.js and PostgreSQL.",
       "Implemented secure payment processing with Stripe integration.",
       "Set up scalable AWS infrastructure and background job processing.",
+      "Implemented AWS S3 for file storage and retrieval and AWS Lambda for background job processing.",
     ],
   },
   {
     id: 5,
     title: "MyPlace",
     images: ["./projects/myplace1.png", "./projects/myplace2.png", "./projects/myplace3.png"],
-    category: "Full Stack Development",
+    category: "Node js Development",
     techStack: [
-      { name: "Express.js", percentage: 90 },
-      { name: "PostgreSQL", percentage: 80 },
-      { name: "Redis", percentage: 75 },
-      { name: "BullMQ", percentage: 90 },
-      { name: "Vue.js", percentage: 85 },
+      { name: "Express js" },
+      { name: "PostgreSQL" },
+      { name: "Redis" },
+      { name: "BullMQ" },
+      { name: "Vue js" },
     ],
     description: [
       "Developed CRM application for a JAPAN real estate company.",
@@ -102,20 +107,16 @@ const works = [
     id: 6,
     title: "AI-Powered Analytics Platform",
     images: [
-      "https://picsum.photos/id/1021/800/600",
-      "https://picsum.photos/id/1016/800/600",
-      "https://picsum.photos/id/1020/800/600",
+      "https://picsum.photos/id/8/800/600"
     ],
-    category: "Full Stack Development",
+    category: "AI Development",
     techStack: [
-      { name: "Python", percentage: 85 },
-      { name: "React", percentage: 90 },
-      { name: "FastAPI", percentage: 85 },
+      { name: "Next js" },
+      { name: "FastAPI" },
     ],
     description: [
-      "Built an AI-powered analytics platform for business intelligence.",
-      "Implemented machine learning models for predictive analytics.",
-      "Created interactive dashboards for data visualization.",
+      "Built an AI-powered analytics platform",
+      "Implemented machine learning models Prompts for predictive analytics.",
     ],
   }
 ]
@@ -123,27 +124,16 @@ const works = [
 // Extract unique categories
 const categories = ["All", ...Array.from(new Set(works.map((work) => work.category)))]
 
-const TechStackBar = ({ tech }: { tech: { name: string; percentage: number } }) => {
+const TechStackBar = ({ tech }: { tech: { name: string } }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="mb-3"
+    <motion.span
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.3 }}
+      className="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
     >
-      <div className="flex justify-between mb-1">
-        <span className="text-gray-200 text-sm font-medium">{tech.name}</span>
-        <span className="text-red-900 text-sm font-bold">{tech.percentage}%</span>
-      </div>
-      <div className="h-1.5 bg-gray-700 rounded-full overflow-hidden">
-        <motion.div
-          className="h-full bg-red-900 rounded-full"
-          initial={{ width: 0 }}
-          animate={{ width: `${tech.percentage}%` }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        />
-      </div>
-    </motion.div>
+      {tech.name}
+    </motion.span>
   )
 }
 
@@ -533,7 +523,7 @@ const MyWorks = () => {
 
                     <div>
                       <h4 className="text-base md:text-lg font-semibold mb-2">Tech Stack</h4>
-                      <div className="space-y-2">
+                      <div className="flex flex-wrap gap-2">
                         {works[selectedProjectIndex].techStack.map((tech, index) => (
                           <TechStackBar key={index} tech={tech} />
                         ))}
