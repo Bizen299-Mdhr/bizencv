@@ -122,7 +122,7 @@ section {
   background: linear-gradient(
     270deg,
     rgba(var(--theme-dark-red), 0.1),
-    rgba(55, 52, 52, 0),
+    rgba(0, 0, 0, 0),
     rgba(var(--theme-dark-red), 0.1)
   );
   background-size: 200% 200%;
@@ -187,4 +187,132 @@ section {
   .fixed.left-8 {
     display: none;
   }
+  .snap-x {
+    scroll-snap-type: x proximity; /* Less strict snapping on mobile */
+  }
+
+  /* Adjust scrollbar size on mobile */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
 }
+
+/* Add these styles to your existing globals.css */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* Custom scrollbar for popup */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thumb-red-900::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--theme-dark-red));
+  border-radius: 3px;
+}
+
+.scrollbar-track-gray-800::-webkit-scrollbar-track {
+  background-color: #1f2937;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Snap scroll */
+.snap-x {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.snap-mandatory > * {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* Custom scrollbar styles */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--theme-dark-red)) #1f2937;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1f2937;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--theme-dark-red));
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(var(--theme-dark-red), 0.8);
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  .snap-x {
+    scroll-snap-type: x proximity;
+  }
+
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .snap-x {
+    scroll-snap-type: x mandatory;
+  }
+}
+
+/* Hide scrollbar for touch devices while maintaining functionality */
+@media (hover: none) and (pointer: coarse) {
+  .hide-scrollbar-on-touch {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .hide-scrollbar-on-touch::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Add these styles to prevent transform issues */
+.transform-none {
+  transform: none !important;
+}
+
+.transform-none:hover {
+  transform: scale(1.1) !important;
+}
+
