@@ -4,7 +4,6 @@ try {
 } catch (e) {
   // ignore error
 }
-console.log("🚀 ~ userConfig:", userConfig,process.env.NODE_ENV)
 const isProd = process.env.NODE_ENV === 'production';
 
 /** @type {import('next').NextConfig} */

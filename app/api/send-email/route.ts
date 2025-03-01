@@ -1,8 +1,12 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-export async function POST(request: Request) {
-  const { name, email, subject, message } = await request.json();
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const name = searchParams.get('name');
+  const email = searchParams.get('email');
+  const subject = searchParams.get('subject');
+  const message = searchParams.get('message');
 
   // Create transporter with Brevo SMTP settings
   const transporter = nodemailer.createTransport({
