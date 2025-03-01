@@ -135,7 +135,8 @@ const works = [
     id: 6,
     title: "AI-Powered Analytics Platform",
     images: [
-      "https://picsum.photos/id/8/800/600"
+      "https://picsum.photos/id/8/800/600",
+      "https://picsum.photos/id/1/800/600"
     ],
     category: "AI Development",
     techStack: [
@@ -164,6 +165,20 @@ const TechStackBar = ({ tech }: { tech: { name: string } }) => {
     </motion.span>
   )
 }
+
+// Add type for DEFAULT_IMAGES
+interface DefaultImages {
+  [key: string]: string;
+  default: string;
+}
+
+const DEFAULT_IMAGES: DefaultImages = {
+  "Node.js Development": "/tech/node.jpg",
+  "Laravel Development": "/tech/laravel.jpg",
+  "Full Stack Development": "/tech/fullstack.jpg",
+  "UI/UX": "/tech/ui-ux.jpg",
+  default: "/tech/coding.jpg",
+};
 
 const MyWorks = () => {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState<number | null>(null)
@@ -307,14 +322,6 @@ const MyWorks = () => {
     exit: { opacity: 0, y: -20 },
   }
 
-  const DEFAULT_IMAGES = {
-    "Node.js Development": "/tech/node.jpg",
-    "Laravel Development": "/tech/laravel.jpg",
-    "Full Stack Development": "/tech/fullstack.jpg",
-    "UI/UX": "/tech/ui-ux.jpg",
-    default: "/tech/coding.jpg",
-  }
-
   const getDefaultImage = (category: string) => {
     return DEFAULT_IMAGES[category] || DEFAULT_IMAGES.default
   }
@@ -410,9 +417,10 @@ const MyWorks = () => {
                       <Image
                         src={item.images[0] || getDefaultImage(item.category)}
                         alt={item.title}
-                        layout="fill"
-                        quality={100}
-                        objectFit="cover"
+                        width={800}
+                        height={900}
+                        quality={10}
+                        style={{ objectFit: "cover" }}
                         className="transition-transform duration-700 hover:scale-110"
                       />
                     </motion.div>
@@ -479,12 +487,11 @@ const MyWorks = () => {
                   <Image
                     src={works[selectedProjectIndex].images[currentImageIndex] || "/placeholder.svg"}
                     alt={works[selectedProjectIndex].title}
-                    width={800}
-                    height={600}
+                    fill
                     className={`object-cover w-full h-full transition-opacity duration-300 ${
                       loading ? "opacity-0" : "opacity-100"
                     }`}
-                    onLoadingComplete={() => setLoading(false)}
+                    onLoad={() => setLoading(false)}
                     style={{ objectFit: 'contain', maxWidth: '100%', maxHeight: '100%' }}
                   />
 
