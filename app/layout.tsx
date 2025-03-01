@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   keywords: ['cv','profile','Bizen Mdhr','custom software developer', 'bizen developer', 'mobile development', 'software development', 'software development company', 'software development services', 'software development in nepal'],
   authors: [{ name: 'Bizen Mdhr', url: 'https://bizendra.com.np' }],
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
   openGraph: {
     title: 'Bizen Mdhr',
