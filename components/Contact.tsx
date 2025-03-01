@@ -62,12 +62,14 @@ const Contact = () => {
     e.preventDefault()
     if (validateForm()) {
       try {
-        const response = await fetch('/api/send-email', {
-          method: 'GET',
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/send-email`, {
+          method: 'POST',
           headers: {
             'Content-Type': 'application/json',
+            'X-Api-Key': process.env.NEXT_PUBLIC_API_KEY || '1234567',
           },
           body: JSON.stringify(formData),
+          mode: 'cors'
         })
 
         const result = await response.json()
