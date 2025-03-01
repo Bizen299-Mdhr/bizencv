@@ -13,13 +13,28 @@ const rajdhani = Rajdhani({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Bizen MDHR',
-    template: '%s | Bizen MDHR', // For dynamic titles in child pages
-    absolute: 'Bizen MDHR'
+    default: 'Bizen MDHR | Software Developer Nepal',
+    template: '%s | Bizen MDHR | Software Developer Nepal', // For dynamic titles in child pages
+    absolute: 'Bizen MDHR | Software Developer Nepal'
   },
 
-  description: 'Bizen MDHR is a software developer that provides custom software development services to businesses of all sizes.',
-  keywords: ['cv','profile','Bizen Mdhr','custom software developer', 'bizen developer', 'mobile development', 'software development', 'software development company', 'software development services', 'software development in nepal'],
+  description: 'Bizen MDHR - Expert software development services for businesses. Specializing in custom software solutions, mobile app development, and  tech services in Nepal.',
+  keywords: [
+    'Bizen MDHR software',
+    'Bizen MDHR',
+    'Bizen Mdhr',
+    'Bizen Developer',
+    'Bizen Developer Nepal',
+    'Bizen Developer Kathmandu',
+    'custom software development Nepal',
+    'mobile app development Nepal',
+    'web application development Nepal',
+    'software consulting Nepal',
+    'React development Nepal',
+    'full-stack developer Nepal',
+    'e-commerce software Nepal',
+
+  ],
   authors: [{ name: 'Bizen Mdhr', url: 'https://bizendra.com.np' }],
   robots: {
     index: true,
@@ -27,9 +42,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Bizen Mdhr',
-    description: 'Bizen Mdhr is a software developer that provides custom software development services to businesses of all sizes.',
+    description: 'Bizen MDHR - Expert software development services for businesses. Specializing in custom software solutions, mobile app development, and  tech services in Nepal.',
     url: 'https://bizendra.com.np',
-    siteName: 'Bizen Mdhr',
+    siteName: 'Bizen Mdhr | Software Developer Nepal',
     images: [
       {
         url: './favicon-32x32.png', // Path to your OG image
@@ -50,8 +65,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Twitter Title',
-    description: 'Twitter Description',
+    title: 'Bizen MDHR | Software Developer Nepal',
+    description: 'Bizen MDHR - Expert software development services for businesses. Specializing in custom software solutions, mobile app development, and  tech services in Nepal.',
     images: ['./favicon-32x32.png'], // Path to your Twitter image
   },
 } 
