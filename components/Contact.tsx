@@ -62,18 +62,12 @@ const Contact = () => {
     e.preventDefault()
     if (validateForm()) {
       try {
-        const queryParams = new URLSearchParams({
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        }).toString();
-
-        const response = await fetch(`/api/send-email?${queryParams}`, {
+        const response = await fetch('/api/send-email', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
           },
+          body: JSON.stringify(formData),
         })
 
         const result = await response.json()
