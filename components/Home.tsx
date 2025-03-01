@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion"
 import TypewriterComponent from "typewriter-effect"
-import { Facebook, Twitter, Instagram } from "lucide-react"
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 import Link from "next/link"
 import { useRef } from "react"
 
@@ -39,11 +39,8 @@ const Home = () => {
         <Link href="#" className="text-gray-400 hover:text-red-900 transition-colors">
           <Facebook className="w-5 h-5" />
         </Link>
-        <Link href="#" className="text-gray-400 hover:text-red-900 transition-colors">
-          <Twitter className="w-5 h-5" />
-        </Link>
-        <Link href="#" className="text-gray-400 hover:text-red-900 transition-colors">
-          <Instagram className="w-5 h-5" />
+        <Link href="https://www.linkedin.com/in/bijendra-manandhar-0a430020/" className="text-gray-400 hover:text-red-900 transition-colors">
+          <Linkedin className="w-5 h-5" />
         </Link>
         <div className="w-px h-20 bg-gray-600 mx-auto mt-4" />
         <span
