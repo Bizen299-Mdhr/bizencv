@@ -18,16 +18,16 @@ export const metadata: Metadata = {
     absolute: 'Bizen MDHR'
   },
 
-  description: 'Bizen MDHR is a software development company that provides custom software development services to businesses of all sizes.',
-  keywords: ['cv','profile','custom software development', 'web development', 'mobile development', 'software development', 'software development company', 'software development services', 'software development company in nepal', 'software development company in kathmandu', 'software development company in biratnagar', 'software development company in birgunj', 'software development company in pokhara', 'software development company in nepal'],
+  description: 'Bizen MDHR is a software developer that provides custom software development services to businesses of all sizes.',
+  keywords: ['cv','profile','Bizen Mdhr','custom software developer', 'bizen developer', 'mobile development', 'software development', 'software development company', 'software development services', 'software development in nepal'],
   authors: [{ name: 'Bizen Mdhr', url: 'https://bizendra.com.np' }],
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
   },
   openGraph: {
     title: 'Bizen Mdhr',
-    description: 'Bizen Mdhr is a software development company that provides custom software development services to businesses of all sizes.',
+    description: 'Bizen Mdhr is a software developer that provides custom software development services to businesses of all sizes.',
     url: 'https://bizendra.com.np',
     siteName: 'Bizen Mdhr',
     images: [

@@ -36,10 +36,10 @@ const Home = () => {
 
       {/* Social Media Links */}
       <div className="fixed left-8 top-1/2 -translate-y-1/2 z-10 flex flex-col gap-6">
-        <Link href="#" className="text-gray-400 hover:text-red-900 transition-colors">
+        <Link rel="canonical" href="https://www.facebook.com/bizen.m" className="text-gray-400 hover:text-red-900 transition-colors">
           <Facebook className="w-5 h-5" />
         </Link>
-        <Link href="https://www.linkedin.com/in/bijendra-manandhar-0a430020/" className="text-gray-400 hover:text-red-900 transition-colors">
+        <Link  rel="canonical" href="https://www.linkedin.com/in/bijendra-manandhar-0a430020/" className="text-gray-400 hover:text-red-900 transition-colors">
           <Linkedin className="w-5 h-5" />
         </Link>
         <div className="w-px h-20 bg-gray-600 mx-auto mt-4" />

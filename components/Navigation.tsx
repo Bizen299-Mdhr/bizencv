@@ -72,7 +72,7 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-8">
         <div className="flex justify-between items-center h-20">
-          <Link href="/" className="text-2xl font-bold tracking-wider text-white group whitespace-nowrap">
+          <Link rel="canonical" href="/" className="text-2xl font-bold tracking-wider text-white group whitespace-nowrap">
             <motion.span
               className="inline-block"
               whileHover={{ scale: 1.2 }}
