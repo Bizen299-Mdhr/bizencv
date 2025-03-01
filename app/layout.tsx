@@ -80,6 +80,13 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* Security Headers */}
+        <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://hebbkx1anhila5yf.public.blob.vercel-storage.com ; font-src 'self'; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';" />
+        <meta name="referrer" content="*" />
+        {/* Other security-related meta tags */}
+        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+        <meta httpEquiv="X-Frame-Options" content="SAMEORIGIN" />
+        <meta httpEquiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=()" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
