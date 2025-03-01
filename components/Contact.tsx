@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { Send } from "lucide-react"
 import type React from "react"
 import toast, { Toaster } from 'react-hot-toast'
+import { config } from '../config'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -62,11 +63,11 @@ const Contact = () => {
     e.preventDefault()
     if (validateForm()) {
       try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/send-email`, {
+        const response = await fetch(`${config.apiUrl}/send-email`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'X-Api-Key': process.env.NEXT_PUBLIC_API_KEY || '1234567',
+            'X-Api-Key': config.apiKey,
           },
           body: JSON.stringify(formData),
           mode: 'cors'
