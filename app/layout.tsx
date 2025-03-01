@@ -80,12 +80,6 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-Frame-Options" content="DENY"></meta>
-        <meta http-equiv="X-Content-Type-Options" content="nosniff"></meta>
-        <meta http-equiv="X-XSS-Protection" content="1; mode=block"></meta>
-        <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin"></meta>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'"></meta>
-        <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload"></meta>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
