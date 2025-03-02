@@ -81,7 +81,19 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <noscript>
+          <style>
+            {`
+              body {
+                display: none !important;
+              }
+            `}
+          </style>
+          <p>Please enable JavaScript to view this site.</p>
+        </noscript>
+      </body>
     </html>
   )
 }

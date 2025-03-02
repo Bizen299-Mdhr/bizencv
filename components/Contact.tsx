@@ -6,8 +6,11 @@ import { Send } from "lucide-react"
 import type React from "react"
 import toast, { Toaster } from 'react-hot-toast'
 import { config } from '../config'
+import { useDisableInspect } from '../hooks/useDisableInspect'
 
 const Contact = () => {
+  useDisableInspect()
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
