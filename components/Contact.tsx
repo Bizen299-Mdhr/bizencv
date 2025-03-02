@@ -25,6 +25,8 @@ const Contact = () => {
     message: "",
   })
 
+  const [isLoading, setIsLoading] = useState(false)
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
@@ -65,6 +67,7 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (validateForm()) {
+      setIsLoading(true)
       try {
         const response = await fetch(`${config.apiUrl}/send-email`, {
           method: 'POST',
@@ -104,6 +107,8 @@ const Contact = () => {
             borderRadius: '8px',
           },
         })
+      } finally {
+        setIsLoading(false)
       }
     }
   }
@@ -192,9 +197,16 @@ const Contact = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="w-full bg-red-900 text-white py-2 px-4 rounded-md hover:bg-red-900 transition duration-300 flex items-center justify-center"
+              disabled={isLoading}
             >
-              <Send className="mr-2" size={18} />
-              Send Message
+              {isLoading ? (
+                <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+              ) : (
+                <>
+                  <Send className="mr-2" size={18} />
+                  Send Message
+                </>
+              )}
             </motion.button>
           </div>
         </form>
