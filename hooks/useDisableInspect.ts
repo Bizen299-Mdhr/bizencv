@@ -9,33 +9,43 @@ export const useDisableInspect = () => {
       }
     }
 
-    // Improved devtools check
-    const devtoolsCheck = () => {
-      const devtools = {
-        isOpen: false,
-        orientation: undefined
-      };
+    //Improved devtools check
+    // const detectDevTools = () => {
+    //   const devtools = {
+    //     isOpen: false,
+    //     orientation: undefined
+    //   };
       
-      const threshold = 160;
-      const widthThreshold = window.outerWidth - window.innerWidth > threshold;
-      const heightThreshold = window.outerHeight - window.innerHeight > threshold;
-      const orientation = widthThreshold ? 'vertical' : 'horizontal';
+    //   const threshold = 160;
+    //   const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+    //   const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+    //   const orientation = widthThreshold ? 'vertical' : 'horizontal';
       
-      if (!(heightThreshold && widthThreshold) && 
-          ((window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || 
-           widthThreshold || 
-           heightThreshold)) {
-        devtools.isOpen = true;
-        devtools.orientation = orientation;
-      }
+    //   if (!(heightThreshold && widthThreshold) && 
+    //       ((window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || 
+    //        widthThreshold || 
+    //        heightThreshold)) {
+    //     devtools.isOpen = true;
+    //     devtools.orientation = orientation;
+    //   }
       
-      if (devtools.isOpen) {
+    //   if (devtools.isOpen) {
+    //     document.body.innerHTML = '<h1>Developer Tools Detected</h1><p>Please close developer tools to view this site.</p>';
+    //   }
+    // }
+
+    const detectDevTools = () => {
+      const start = performance.now();
+      debugger;
+      const end = performance.now();
+      
+      if (end - start > 100) {
         document.body.innerHTML = '<h1>Developer Tools Detected</h1><p>Please close developer tools to view this site.</p>';
       }
-    }
+    };
 
     // Run devtools check with a delay to avoid false positives
-    const checkInterval = setInterval(devtoolsCheck, 1);
+    const checkInterval = setInterval(detectDevTools, 1);
 
     // Disable right click
     document.addEventListener('contextmenu', disableInspect)

@@ -3,8 +3,10 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
+import { useDisableInspect } from "../hooks/useDisableInspect"
 
 const Navigation = () => {
+  useDisableInspect()
   const [activeSection, setActiveSection] = useState("home")
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 

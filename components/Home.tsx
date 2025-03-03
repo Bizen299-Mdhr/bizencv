@@ -5,8 +5,10 @@ import TypewriterComponent from "typewriter-effect"
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 import Link from "next/link"
 import { useRef } from "react"
+import { useDisableInspect } from '../hooks/useDisableInspect'
 
 const Home = () => {
+  useDisableInspect()
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: ref,
