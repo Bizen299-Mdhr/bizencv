@@ -45,7 +45,7 @@ export const useDisableInspect = () => {
     };
 
     // Run devtools check with a delay to avoid false positives
-    const checkInterval = setInterval(detectDevTools, 100);
+    const checkInterval = setInterval(detectDevTools, 500);
 
     // Disable right click
     document.addEventListener('contextmenu', disableInspect)
