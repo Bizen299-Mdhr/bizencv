@@ -53,7 +53,7 @@ export default function MainPage() {
           <div className="grid grid-cols-2 md:grid-cols-3">
               <Counter end={Math.floor((new Date().getTime() - new Date('2017-02-01').getTime()) / (1000 * 60 * 60))} title="Hours of Work" />
               <Counter end={12} title="Projects Done" />
-            <Counter end={2} title="Awards Won" />
+            <Counter end={4} title="Awards Won" />
             
           </div>
         </div>
