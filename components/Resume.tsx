@@ -26,7 +26,7 @@ const Resume = () => {
       {
         position: "Senior Full Stack Developer / Tech lead",
         company: "EK Solutions",
-        year: "2017-01 - Present",
+        year: "2017 - Present",
         responsibilities: [
           "Lead development of scalable web applications",
           "Mentor junior developers and conduct code reviews",
