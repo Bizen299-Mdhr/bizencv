@@ -145,7 +145,7 @@ const Navigation = () => {
               </motion.li>
             ))}
           </ul>
-        </div>
+          </div>
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (

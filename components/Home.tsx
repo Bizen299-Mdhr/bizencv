@@ -51,6 +51,34 @@ const Home = () => {
         >
           Follow Me
         </span>
+        <Link 
+          href="/liverpool-fan" 
+          className="tracking-wider"
+        >
+          <motion.div 
+            className="relative group"
+            initial="initial"
+            whileHover="hover"
+          >
+            <img 
+              src="/pngwing.com.png" 
+              alt="Liverpool FC" 
+              className="w-5 h-8 filter brightness-0 invert-[.65] hover:brightness-100 hover:invert-0 transition-all"
+            />
+            {/* Tooltip */}
+            <motion.div
+              variants={{
+                initial: { opacity: 0, y: 5 },
+                hover: { opacity: 1, y: 0 }
+              }}
+              className="absolute left-1/2 -translate-x-1/2 top-full mt-2 px-3 py-1.5 bg-[#C8102E] text-white text-xs rounded-md whitespace-nowrap origin-top"
+              style={{ pointerEvents: 'none' }}
+            >
+              me as fan page
+              <div className="absolute w-2 h-2 bg-[#C8102E] rotate-45 -top-1 left-1.2 -translate-x-1/2" />
+            </motion.div>
+          </motion.div>
+        </Link>
       </div>
 
       <motion.div className="container mx-auto px-8 relative z-10 ml-20" style={{ y }}>
