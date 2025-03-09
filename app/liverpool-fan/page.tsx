@@ -111,9 +111,13 @@ export default function LiverpoolFanPage() {
                   <h4 className="text-xl font-bold mb-2">🏆 Honours</h4>
                   <ul className="space-y-1">
                     <li>6 European Cups</li>
+                    <li>3 UEFA Cups</li>
+                    <li>4 UEFA Super Cup</li>
+                    <li>16 Charity/Community Shields</li>
                     <li>19 League Titles</li>
                     <li>8 FA Cups</li>
-                    <li>9 League Cups</li>
+                    <li>10 League Cups</li>
+                    <li>1 FIFA Club World Cup</li>
                   </ul>
                 </div>
                 <div className="p-4 bg-black/30 rounded-lg">
