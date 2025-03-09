@@ -222,7 +222,7 @@ export default function LiverpoolFanPage() {
             <div className="space-y-8 relative">
               <h2 className="text-5xl font-bold mb-8">
                 My LFC Journey
-                <span className="block text-[#C8102E] text-3xl mt-4">Since Istanbul 2005</span>
+              
               </h2>
               
               <motion.div
