@@ -316,3 +316,36 @@ section {
   transform: scale(1.1) !important;
 }
 
+/* Add to existing CSS */
+.lfc-theme {
+  --theme-dark-red: 200, 16, 46; /* Liverpool FC red */
+}
+
+.lfc-bg-pattern {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(200, 16, 46, 0.1),
+    rgba(200, 16, 46, 0.1) 10px,
+    rgba(0, 0, 0, 0.1) 10px,
+    rgba(0, 0, 0, 0.1) 20px
+  );
+}
+
+/* Add to existing CSS */
+.snap-y {
+  scroll-snap-type: y mandatory;
+}
+
+.snap-always {
+  scroll-snap-align: start;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
