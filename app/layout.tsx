@@ -81,6 +81,20 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap" />
+        <meta 
+          httpEquiv="Content-Security-Policy" 
+          content="default-src 'self'; 
+            script-src 'self' 'unsafe-inline' 'unsafe-eval'; 
+            style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+            img-src 'self' data: https://hebbkx1anhila5yf.public.blob.vercel-storage.com https://picsum.photos https://*.picsum.photos/*; 
+            font-src 'self' https://fonts.gstatic.com; 
+            connect-src 'self' https://simple-email-api-jyzt.onrender.com; 
+            frame-src 'self'; 
+            object-src 'none'; 
+            base-uri 'self'; 
+            form-action 'self';"
+        />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
       </head>
       <body className={inter.className}>
         {children}

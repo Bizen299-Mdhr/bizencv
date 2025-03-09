@@ -37,7 +37,18 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://hebbkx1anhila5yf.public.blob.vercel-storage.com  https://picsum.photos https://*.picsum.photos/*; font-src 'self'; connect-src 'self' https://simple-email-api-jyzt.onrender.com;  frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';" 
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+              "img-src 'self' data: https://hebbkx1anhila5yf.public.blob.vercel-storage.com https://picsum.photos https://*.picsum.photos/*",
+              "font-src 'self' https://fonts.gstatic.com",
+              "connect-src 'self' https://simple-email-api-jyzt.onrender.com",
+              "frame-src 'self'",
+              "object-src 'none'",
+              "base-uri 'self'",
+              "form-action 'self'"
+            ].join('; ')
           },
           {
             key: 'X-Frame-Options',
@@ -49,7 +60,7 @@ const nextConfig = {
           },
           {
             key: 'Referrer-Policy',
-            value: '*'
+            value: 'strict-origin-when-cross-origin'
           },
           {
             key: 'Permissions-Policy',
