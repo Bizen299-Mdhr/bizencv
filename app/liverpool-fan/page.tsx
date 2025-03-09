@@ -8,6 +8,7 @@ import { ScrollReveal } from "../../components/ScrollReveal"
 import { useDisableInspect } from "../../hooks/useDisableInspect"
 
 export default function LiverpoolFanPage() {
+    useDisableInspect();
   return (
     <div 
       className="snap-y snap-mandatory h-screen overflow-y-scroll hide-scrollbar"
@@ -171,10 +172,7 @@ export default function LiverpoolFanPage() {
                     Matchday Rituals
                   </h4>
                   <ul className="space-y-2 text-gray-300">
-                    <li>⏰ 2h pre-match analysis</li>
-                    <li>🎵 You'll Never Walk Alone x10</li>
-                    <li>🍵 3 cups of Nepali chiya</li>
-                    <li>🔴⚪🔴 Wear lucky 2019 UCL scarf</li>
+                    <li>🎵 YNWA </li>
                   </ul>
                 </div>
               </div>
@@ -229,7 +227,7 @@ export default function LiverpoolFanPage() {
                 className="text-2xl leading-relaxed text-gray-300 space-y-6"
               >
                 <p>
-                  As BIZEN Mdhr, I've been bleeding red since Istanbul 2005! 💪
+                  As BIZEN Mdhr, I've been bleeding red! 💪
                 </p>
                 <div className="flex flex-col items-center gap-3 text-[#C8102E]">
                   <div className="w-24 h-1 bg-[#C8102E] mb-6" />
