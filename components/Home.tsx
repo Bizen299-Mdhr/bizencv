@@ -51,7 +51,7 @@ const Home = () => {
         >
           Follow Me
         </span>
-        <Link 
+        {/* <Link 
           href="/liverpool-fan" 
           className="tracking-wider"
         >
@@ -65,7 +65,7 @@ const Home = () => {
               alt="Liverpool FC" 
               className="w-5 h-8 filter brightness-0 invert-[.65] hover:brightness-100 hover:invert-0 transition-all"
             />
-            {/* Tooltip */}
+            
             <motion.div
               variants={{
                 initial: { opacity: 0, y: 5 },
@@ -78,7 +78,7 @@ const Home = () => {
               <div className="absolute w-2 h-2 bg-[#C8102E] rotate-45 -top-1 left-1.2 -translate-x-1/2" />
             </motion.div>
           </motion.div>
-        </Link>
+        </Link> */}
       </div>
 
       <motion.div className="container mx-auto px-8 relative z-10 ml-20" style={{ y }}>
