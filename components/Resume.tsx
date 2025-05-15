@@ -50,7 +50,7 @@ const Resume = () => {
     ],
     skills: [
       "JavaScript/TypeScript",
-      "React/Next.js",
+      "Next.js",
       "Node.js",
       "Python",
       "SQL/NoSQL Databases",
