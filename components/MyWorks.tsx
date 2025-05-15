@@ -124,8 +124,7 @@ const works = [
     description: [
       "Implemented a efficient system backend API for RECKI app",
       "Implemented Google Analytics for tracking user behavior",
-      "Implemented Kubernetes load balancer for efficient resource management",
-      "Implemented Docker for containerization",
+      "Implemented Some DevOps best practices like Kubernetes load balancer for efficient resource management",
       "Implemented BullMQ for background job processing",
       "Implemented GCP for scalable infrastructure and storage",
       "Implemented Redis for caching",

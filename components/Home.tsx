@@ -111,23 +111,23 @@ const Home = () => {
               options={{
                 strings: [
                     "DEVELOPER",
-                    "BACKEND ENGINEER",
+                    // "BACKEND ENGINEER",
                     "API ARCHITECT",
                     // "MICROSERVICES SPECIALIST",
-                    "DATABASE EXPERT",
+                    "DATABASE MANAGER",
                     "SYSTEMS INTEGRATOR",
                     // "DEVOPS PRACTITIONER",
                     "SOFTWARE ARCHITECT",
                     "NODE.JS DEVELOPER",
                     "PYTHON DEVELOPER",
-                    "SERVER-SIDE DEVELOPER",
-                    "REST API DEVELOPER",
+                    // "SERVER-SIDE DEVELOPER",
+                    // "REST API DEVELOPER",
                     // "GRAPHQL DEVELOPER",
-                    "SOFTWARE ENGINEER",
+                    // "SOFTWARE ENGINEER",
                     "TECH LEAD",
                     "SOLUTIONS ARCHITECT",
-                    "SYSTEMS ENGINEER",
-                    "INFRASTRUCTURE DEVELOPER"
+                    "SYSTEMS ENGINEER"
+                    // "INFRASTRUCTURE DEVELOPER"
                 ],
                 autoStart: true,
                 loop: true,

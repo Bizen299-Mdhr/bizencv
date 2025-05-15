@@ -114,7 +114,7 @@ export default function LiverpoolFanPage() {
                     <li>3 UEFA Cups</li>
                     <li>4 UEFA Super Cup</li>
                     <li>16 Charity/Community Shields</li>
-                    <li>19 League Titles</li>
+                    <li>20 League Titles</li>
                     <li>8 FA Cups</li>
                     <li>10 League Cups</li>
                     <li>1 FIFA Club World Cup</li>

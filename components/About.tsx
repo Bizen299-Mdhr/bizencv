@@ -17,7 +17,7 @@ const skills: Skill[] = [
   { name: "TypeScript", percentage: 85, category: "Development" },
 
   // Design Skills
-  { name: "System Design", percentage: 90, category: "Design" },
+  { name: "System Design", percentage: 60, category: "Design" },
   { name: "UX Design", percentage: 50, category: "Design" },
 
   // Other Skills

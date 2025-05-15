@@ -22,11 +22,7 @@ const servicesData = [
     title: "Web Development",
     description: "Full-stack web development using modern technologies. Creating scalable, secure, and maintainable web applications."
   },
-  {
-    icon: Terminal,
-    title: "DevOps",
-    description: "Experience with CI/CD pipelines, Docker containerization, cloud platforms (AWS & GCP), and Google Workspace administration. Proficient in cloud infrastructure management and deployment automation."
-  },
+
   // {
   //   icon: Palette,
   //   title: "UI/UX Design",

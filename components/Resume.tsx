@@ -9,7 +9,7 @@ const Resume = () => {
       {
         degree: "Bachelors in Computer Application",
         school: "Indira Gandhi National Open University ",
-        year: "2020",
+        year: "2023",
       },
       {
         degree: "Intermediate +2 Science",
@@ -30,7 +30,7 @@ const Resume = () => {
         responsibilities: [
           "Lead development of scalable web applications",
           "Mentor junior developers and conduct code reviews",
-          "Implement CI/CD pipelines and Some DevOps best practices ",
+          "Implement and manage CI/CD pipelines and Some DevOps best practices ",
           "Manage and monitor the performance of the team",
           "Design and implement new features and improvements to existing systems",
           "Collaborate with cross-functional teams to deliver high-quality software",
@@ -58,11 +58,8 @@ const Resume = () => {
       "Some of DevOps tools: Docker/Kubernetes",
       "Git/GitHub/GitLab",
       "GCP",
-      "GraphQL",
       "Machine Learning",
       "Laravel",
-      "Wordpress",
-      "HTML/CSS/Tailwind",
       "Bootstrap",
       "JQuery",
     ],
