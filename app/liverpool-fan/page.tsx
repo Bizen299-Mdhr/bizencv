@@ -95,7 +95,7 @@ export default function LiverpoolFanPage() {
               You'll Never Walk Alone
               <TypewriterComponent
                 options={{
-                  strings: ["Kopite Since 1892", "6× European Champions", "19× League Champions", "Anfield Faithful"],
+                  strings: ["Kopite Since 1892", "6× European Champions", "20× League Champions", "Anfield Faithful"],
                   autoStart: true,
                   loop: true,
                   cursor: "|",

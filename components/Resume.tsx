@@ -58,7 +58,6 @@ const Resume = () => {
       "Some of DevOps tools: Docker/Kubernetes",
       "Git/GitHub/GitLab",
       "GCP",
-      "Machine Learning",
       "Laravel",
       "Bootstrap",
       "JQuery",
